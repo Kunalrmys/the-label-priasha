@@ -1,12 +1,9 @@
 backend:
   name: git-gateway
-  repo: Kunalrmys/the-label-priasha
   branch: main
 
 media_folder: "images/uploads"
 public_folder: "/images/uploads"
-
-publish_mode: editorial_workflow
 
 collections:
   - name: products
