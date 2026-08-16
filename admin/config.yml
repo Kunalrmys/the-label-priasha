@@ -8,57 +8,42 @@ public_folder: "/images/uploads"
 collections:
   - name: products
     label: Products
-    files:
-      - label: "Product catalog"
-        name: catalog
-        file: "content/products.json"
-        format: json
-        fields:
-          - label: Products
-            name: products
-            widget: list
-            summary: "{{fields.title}} — {{fields.category}}"
-            fields:
-              - {label: Title, name: title, widget: string}
-              - {label: Slug, name: slug, widget: string, hint: "Lowercase URL slug, e.g. rose-mulmul-dress"}
-              - {label: Category, name: category, widget: select, options: ["Dresses", "Sarees", "Kaftan", "Kurtis", "Crochet", "Designer Customized", "Lookbook"]}
-              - {label: Images, name: images, widget: list, field: {label: Image, name: image, widget: image}}
-              - {label: Price range, name: price_range, widget: string, required: false}
-              - {label: Short description, name: short_description, widget: text}
-              - {label: Long description, name: long_description, widget: text, required: false}
-              - {label: Tags, name: tags, widget: list, required: false}
-              - {label: Notes, name: notes, widget: text, required: false, hint: "Lead time, customization or availability notes"}
-              - {label: Featured, name: featured, widget: boolean, default: false}
+    label_singular: Product
+    folder: "content/products"
+    create: true
+    slug: "{{fields.slug}}"
+    format: json
+    fields:
+      - {label: Title, name: title, widget: string}
+      - {label: Slug, name: slug, widget: string, hint: "Lowercase with hyphens e.g. pink-silk-dress"}
+      - {label: Category, name: category, widget: select, options: ["Dresses", "Sarees", "Kaftan", "Kurtis", "Crochet", "Designer Customized"]}
+      - {label: Images, name: images, widget: list, field: {label: Image, name: image, widget: image}}
+      - {label: Price range, name: price_range, widget: string, required: false}
+      - {label: Short description, name: short_description, widget: text}
+      - {label: Long description, name: long_description, widget: text, required: false}
+      - {label: Tags, name: tags, widget: list, required: false}
+      - {label: Notes, name: notes, widget: text, required: false}
+      - {label: Featured, name: featured, widget: boolean, default: false}
 
   - name: lookbook
     label: Lookbook
-    files:
-      - label: "Lookbook gallery"
-        name: gallery
-        file: "content/lookbook.json"
-        format: json
-        fields:
-          - label: Images
-            name: items
-            widget: list
-            fields:
-              - {label: Image, name: image, widget: image}
-              - {label: Alt text, name: alt, widget: string}
+    label_singular: Lookbook image
+    folder: "content/lookbook"
+    create: true
+    format: json
+    fields:
+      - {label: Image, name: image, widget: image}
+      - {label: Alt text, name: alt, widget: string}
 
   - name: testimonials
     label: Testimonials
-    files:
-      - label: "Testimonials"
-        name: testimonials
-        file: "content/testimonials.json"
-        format: json
-        fields:
-          - label: Testimonials
-            name: testimonials
-            widget: list
-            fields:
-              - {label: Name, name: name, widget: string}
-              - {label: Quote, name: quote, widget: text}
+    label_singular: Testimonial
+    folder: "content/testimonials"
+    create: true
+    format: json
+    fields:
+      - {label: Name, name: name, widget: string}
+      - {label: Quote, name: quote, widget: text}
 
   - name: site
     label: Site content
