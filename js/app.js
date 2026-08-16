@@ -26,12 +26,26 @@ let DATA = {products: [], lookbook: [], testimonials: [], site: fallbackSite};
 
 async function loadData() {
   try {
-    const [products, lookbook, testimonials, site] = await Promise.all([
-      fetch("content/products.json").then(r => r.json()),
-      fetch("content/lookbook.json").then(r => r.json()),
-      fetch("content/testimonials.json").then(r => r.json()),
-      fetch("content/site.json").then(r => r.json())
+    const site = await fetch("content/site.json").then(r => r.json());
+
+    const [prodIndex, lookIndex, testIndex] = await Promise.all([
+      fetch("content/products/index.json").catch(() => null),
+      fetch("content/lookbook/index.json").catch(() => null),
+      fetch("content/testimonials/index.json").catch(() => null)
     ]);
+
+    const products = prodIndex ? await prodIndex.json().then(list =>
+      Promise.all(list.map(f => fetch("content/products/" + f).then(r => r.json())))
+    ).catch(() => []) : [];
+
+    const lookbook = lookIndex ? await lookIndex.json().then(list =>
+      Promise.all(list.map(f => fetch("content/lookbook/" + f).then(r => r.json())))
+    ).catch(() => []) : [];
+
+    const testimonials = testIndex ? await testIndex.json().then(list =>
+      Promise.all(list.map(f => fetch("content/testimonials/" + f).then(r => r.json())))
+    ).catch(() => []) : [];
+
     DATA = {products, lookbook, testimonials, site};
   } catch (err) {
     console.warn("CMS data could not be loaded; using fallback content.", err);
