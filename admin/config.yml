@@ -1,0 +1,91 @@
+backend:
+  name: github
+  repo: YOUR_GITHUB_USERNAME/the-label-priasha
+  branch: main
+  base_url: https://YOUR-OAUTH-PROVIDER.example.com
+  auth_endpoint: auth
+
+media_folder: "images/uploads"
+public_folder: "/images/uploads"
+
+publish_mode: editorial_workflow
+
+collections:
+  - name: products
+    label: Products
+    files:
+      - label: "Product catalog"
+        name: catalog
+        file: "content/products.json"
+        format: json
+        fields:
+          - label: Products
+            name: products
+            widget: list
+            summary: "{{fields.title}} — {{fields.category}}"
+            fields:
+              - {label: Title, name: title, widget: string}
+              - {label: Slug, name: slug, widget: string, hint: "Lowercase URL slug, e.g. rose-mulmul-dress"}
+              - {label: Category, name: category, widget: select, options: ["Dresses", "Sarees", "Kaftan", "Kurtis", "Crochet", "Designer Customized", "Lookbook"]}
+              - {label: Images, name: images, widget: list, field: {label: Image, name: image, widget: image}}
+              - {label: Price range, name: price_range, widget: string, required: false}
+              - {label: Short description, name: short_description, widget: text}
+              - {label: Long description, name: long_description, widget: text, required: false}
+              - {label: Tags, name: tags, widget: list, required: false}
+              - {label: Notes, name: notes, widget: text, required: false, hint: "Lead time, customization or availability notes"}
+              - {label: Featured, name: featured, widget: boolean, default: false}
+
+  - name: lookbook
+    label: Lookbook
+    files:
+      - label: "Lookbook gallery"
+        name: gallery
+        file: "content/lookbook.json"
+        format: json
+        fields:
+          - label: Images
+            name: items
+            widget: list
+            fields:
+              - {label: Image, name: image, widget: image}
+              - {label: Alt text, name: alt, widget: string}
+
+  - name: testimonials
+    label: Testimonials
+    files:
+      - label: "Testimonials"
+        name: testimonials
+        file: "content/testimonials.json"
+        format: json
+        fields:
+          - label: Testimonials
+            name: testimonials
+            widget: list
+            fields:
+              - {label: Name, name: name, widget: string}
+              - {label: Quote, name: quote, widget: text}
+
+  - name: site
+    label: Site content
+    files:
+      - label: "About, contact & social"
+        name: settings
+        file: "content/site.json"
+        format: json
+        fields:
+          - {label: Email, name: email, widget: string}
+          - {label: Instagram URL, name: instagram, widget: string, required: false}
+          - {label: Facebook URL, name: facebook, widget: string, required: false}
+          - label: About
+            name: about
+            widget: object
+            fields:
+              - {label: Title, name: title, widget: string}
+              - {label: Intro, name: intro, widget: text}
+              - {label: Paragraphs, name: paragraphs, widget: list, field: {label: Paragraph, name: paragraph, widget: text}}
+              - label: Values
+                name: values
+                widget: list
+                fields:
+                  - {label: Value name, name: name, widget: string}
+                  - {label: Description, name: description, widget: text}

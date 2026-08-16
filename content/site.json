@@ -1,0 +1,28 @@
+{
+  "email": "hello@thelabelpriasha.com",
+  "instagram": "",
+  "facebook": "",
+  "about": {
+    "title": "The Label Priasha by Priya",
+    "intro": "The Label Priasha by Priya is rooted in slow fashion and the beauty of handcrafted textiles.",
+    "paragraphs": [
+      "Each piece is thoughtfully designed with an appreciation for traditional techniques, beautiful fabrics and the hands behind the craft.",
+      "The label celebrates clothing that feels personal rather than disposable — pieces made to be worn, loved, restyled and remembered.",
+      "From everyday silhouettes to customized designer pieces, Priya works closely with clients to create clothing that reflects their individuality."
+    ],
+    "values": [
+      {
+        "name": "Slow fashion",
+        "description": "Thoughtful collections over fast trends, with an emphasis on longevity and intentional buying."
+      },
+      {
+        "name": "Handcrafted detail",
+        "description": "A love for textiles, texture and the small details that make a garment feel special."
+      },
+      {
+        "name": "Personal design",
+        "description": "Customization and personal conversations are part of the experience — from concept to final piece."
+      }
+    ]
+  }
+}

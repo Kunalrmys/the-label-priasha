@@ -1,0 +1,112 @@
+[
+  {
+    "title": "Rose Mulmul Dress",
+    "slug": "rose-mulmul-dress",
+    "category": "Dresses",
+    "images": [
+      "https://images.unsplash.com/photo-1595777457583-95e059d581b8?auto=format&fit=crop&w=1000&q=80",
+      "https://images.unsplash.com/photo-1539008835657-9e8e9680c956?auto=format&fit=crop&w=1000&q=80"
+    ],
+    "price_range": "₹3,500–₹5,500",
+    "short_description": "Soft mulmul cotton with an easy, feminine silhouette.",
+    "long_description": "A breathable, thoughtfully finished dress designed for relaxed days and intimate occasions. Enquire for available colours and customization.",
+    "tags": [
+      "mulmul cotton",
+      "handcrafted",
+      "easy fit"
+    ],
+    "notes": "Typical lead time: 10–14 days. Custom sizing available.",
+    "featured": true
+  },
+  {
+    "title": "Handwoven Ivory Saree",
+    "slug": "handwoven-ivory-saree",
+    "category": "Sarees",
+    "images": [
+      "https://images.unsplash.com/photo-1610030469983-98e550d6193c?auto=format&fit=crop&w=1000&q=80"
+    ],
+    "price_range": "₹4,500–₹8,500",
+    "short_description": "An understated drape celebrating texture and natural elegance.",
+    "long_description": "A timeless saree for those who love subtle texture and versatile styling. Ask Priya about blouse customization and current textile availability.",
+    "tags": [
+      "handwoven",
+      "ivory",
+      "timeless"
+    ],
+    "notes": "Blouse customization available.",
+    "featured": true
+  },
+  {
+    "title": "Indigo Everyday Kurti",
+    "slug": "indigo-everyday-kurti",
+    "category": "Kurtis",
+    "images": [
+      "https://images.unsplash.com/photo-1583391733956-6c78276477e2?auto=format&fit=crop&w=1000&q=80"
+    ],
+    "price_range": "₹2,200–₹3,800",
+    "short_description": "An effortless kurti made for repeat wear.",
+    "long_description": "A comfortable everyday silhouette with a handcrafted feel. Available in select textile variations and customizable to your measurements.",
+    "tags": [
+      "indigo",
+      "everyday",
+      "comfortable"
+    ],
+    "notes": "Lead time varies by fabric availability.",
+    "featured": true
+  },
+  {
+    "title": "Noir Silk Kaftan",
+    "slug": "noir-silk-kaftan",
+    "category": "Kaftan",
+    "images": [
+      "https://images.unsplash.com/photo-1741635622063-705ce1190484?auto=format&fit=crop&w=1000&q=80",
+      "https://images.unsplash.com/photo-1741635622063-705ce1190484?auto=format&fit=crop&w=1000&q=80&crop=top"
+    ],
+    "price_range": "₹4,200–₹6,800",
+    "short_description": "A fluid, floor-skimming kaftan cut for effortless, breezy elegance.",
+    "long_description": "Generous drape, a relaxed silhouette and hand-finished edges make this kaftan equally suited to resort days and evening ease. Enquire about fabric options and length adjustments.",
+    "tags": [
+      "kaftan",
+      "flowy",
+      "resort"
+    ],
+    "notes": "Typical lead time: 10–14 days. One-size relaxed fit with tie-waist customization available.",
+    "featured": true
+  },
+  {
+    "title": "Crochet Bloom Top",
+    "slug": "crochet-bloom-top",
+    "category": "Crochet",
+    "images": [
+      "https://images.unsplash.com/photo-1529139574466-a303027c1d8b?auto=format&fit=crop&w=1000&q=80"
+    ],
+    "price_range": "₹1,800–₹3,200",
+    "short_description": "A playful handcrafted crochet layer with delicate texture.",
+    "long_description": "A lightweight crochet piece designed to layer over dresses, camisoles and sarees. Enquire for colour options and made-to-measure requests.",
+    "tags": [
+      "crochet",
+      "handmade",
+      "layering"
+    ],
+    "notes": "Made to order; allow 2–3 weeks.",
+    "featured": true
+  },
+  {
+    "title": "Custom Occasion Ensemble",
+    "slug": "custom-occasion-ensemble",
+    "category": "Designer Customized",
+    "images": [
+      "https://images.unsplash.com/photo-1614252369475-531eba835eb1?auto=format&fit=crop&w=1000&q=80"
+    ],
+    "price_range": "₹7,500 onwards",
+    "short_description": "A one-to-one custom design for your occasion and personality.",
+    "long_description": "Work with Priya to develop a personalized ensemble around your occasion, preferred silhouette, textile and styling direction. Final pricing depends on fabric, detailing and complexity.",
+    "tags": [
+      "custom",
+      "designer",
+      "made-to-measure"
+    ],
+    "notes": "Consultation required. Typical lead time: 3–5 weeks.",
+    "featured": true
+  }
+]
